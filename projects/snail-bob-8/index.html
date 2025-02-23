@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, shrink-to-fit=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+
+    <meta name="robots" content="index, follow">
+    <title>Play Snail Bob 8 Island Story AT - HAH Games online</title>
+    <meta name="description"
+        content="Enjoy Snail Bob 8 Island Story AT HAH Games online for free. Play and have fun with simple controls and exciting challenges. No download needed. Try it now!">
+    <link rel="canonical" href="https://hah-games.github.io/projects//index.html">
+
+    <meta name="title" content="Snail Bob 8 Island Story">
+    <meta name="keywords"
+        content="Snail Bob 8 Island Story, Snail Bob 8">
+    <meta name="news_keywords"
+        content="Snail Bob 8 Island Story, Snail Bob 8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FEE2WLPJTY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FEE2WLPJTY');
+    </script>
+<style>
+         /* Top bar styling */
+         #top-bar {
+            background-color: #000000;
+            color: white;
+            text-align: right;
+            padding: 19px 20px;
+            /* Adjust padding */
+            position: fixed;
+            top: 0;
+            right: 0;
+            /* Move it to the right */
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            width: auto;
+            /* Adjust width as needed */
+            min-width: 150px;
+            /* Ensure it has enough space */
+        }
+         /* Top bar styling */
+         #top-bar1 {
+            background-color: #000000;
+            color: white;
+            text-align: right;
+            padding: 19px 20px;
+            /* Adjust padding */
+            position: fixed;
+            top: 0;
+            /* Move it to the right */
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            width: auto;
+            /* Adjust width as needed */
+            min-width: 150px;
+            /* Ensure it has enough space */
+        }
+    </style>
+</head>
+
+
+<body style="overflow:hidden;">
+    <div id="top-bar"><a href="/index.html" style="color: #ff0004;" target="_blank">More Games</a></div>
+    <div id="top-bar1"><a href="/index.html" style="color: #ff0004;" target="_blank">More Games</a></div>
+
+    <div id="content"></div>
+    <div id="orientation"></div>
+    <div id="loader">Loading ...</div>
+
+    <script type="text/javascript">
+        var gameName = "snailbob-8.min.js";
+
+
+
+
+
+
+        //This all here is for cache busting;
+        function addScript(src, buster, callback) {
+            var s = document.createElement('script');
+            s.setAttribute('src', src + '?v=' + buster);
+            if (typeof callback === 'function') {
+                s.onload = callback;
+            }
+            document.body.appendChild(s);
+        }
+
+
+
+        addScript('version.js', Date.now(), function() {
+
+            addScript(gameName, version, function() {
+                var game = new SnailBob.Main();
+            });
+
+        });
+    </script>
+    <script src="js/analytics_ubg_v1_4.js"></script>
+    <script src="js/ubg235_client_v1_1.js"></script>
+</body>
+
+</html>

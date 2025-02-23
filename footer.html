@@ -1,0 +1,54 @@
+<style>
+
+
+		canvas {
+			touch-action: none;
+		}
+		#footer {
+			width: 100%;
+			background: #111;
+			color: white;
+			text-align: center;
+			padding: 10px 0;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			z-index: 1000;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		#footer img {
+			height: 30px;
+			margin-left: 10px;
+		}
+
+		#footer span {
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		#fullscreen {
+			cursor: pointer;
+			font-size: 18px;
+			margin-right: 10px;
+		}
+	</style>
+
+<footer>
+	<div id="footer">
+		<img src="/games-site-logo.png" alt="Logo">
+		<span>HAH Games</span>
+		<span id="fullscreen">⛶</span>
+	</div>
+	<script>
+		document.getElementById("fullscreen").addEventListener("click", function () {
+			if (!document.fullscreenElement) {
+				document.documentElement.requestFullscreen();
+			} else {
+				document.exitFullscreen();
+			}
+		});
+	</script>
+</footer>

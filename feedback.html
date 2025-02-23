@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Feedback – Share Your Thoughts | Hah Games</title>
+  <meta name="description"
+    content="Have feedback for Hah Games? Share your thoughts and help us improve. We value your opinion and appreciate your input.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/games-site-logo.png" />
+    <link rel="shortcut icon" href="/games-site-logo.png" />
+  <link rel="canonical" href="https://hah-games.github.io/feedback.html">
+  <link rel="stylesheet" href="styles.css">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEE2WLPJTY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FEE2WLPJTY');
+</script>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    .menubar {
+      width: 100%;
+      background: #1e1e1e;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .topnav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .topnav a:hover {
+      color: #383636;
+    }
+
+    .contact-form {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-form:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-form h2 {
+      color: #fff;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #333;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      background: #444;
+      outline: none;
+    }
+
+    .contact-form button {
+      background: #6200ea;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #3700b3;
+    }
+
+    .plane {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      width: 50px;
+      height: 50px;
+      background: url('goku.png') no-repeat center/contain;
+      opacity: 0;
+      transition: transform 1s linear, opacity 0.5s;
+    }
+
+    .contact-form:hover .plane {
+      opacity: 1;
+      transform: translate(300px, 300px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menubar" style="padding-top: -2px;">
+    <div class="topnav">
+      <a class="active" href="index.html"><strong>Back to the Main Home</strong></a>
+
+    </div>
+  </div>
+  <form class="contact-form" action="https://formspree.io/f/xgvoyeyv" method="POST">
+    <div class="plane"></div>
+    <h2>Contact Us</h2>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</body>
+
+</html>

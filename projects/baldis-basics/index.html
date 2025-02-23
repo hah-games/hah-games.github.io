@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Baldi's Web-Based Basics 1.4.3 Edition 1.0.0.json", {onProgress: UnityProgress});
+    </script>
+     <meta name="robots" content="index, follow">
+     <title>Play Baldis Basics free AT - HAH Games online</title>
+     <meta name="description"
+         content="Enjoy Baldis Basics AT HAH Games online for free. Play and have fun with simple controls and exciting challenges. No download needed. Try it now!">
+     <link rel="canonical" href="https://hah-games.github.io/projects/baldis-basics/index.html">
+ 
+     <meta name="title" content="">
+     <meta name="keywords"
+         content="baldis-basics, Baldis Basics.github, Baldis Basics.hah-games">
+     <meta name="news_keywords"
+         content="baldis-basics, Baldis Basics.github, Baldis Basics.hah-games">
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FEE2WLPJTY"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() { dataLayer.push(arguments); }
+         gtag('js', new Date());
+ 
+         gtag('config', 'G-FEE2WLPJTY');
+     </script>
+ <style>
+         /* Top bar styling */
+         #top-bar {
+             width: 100%;
+             background-color: #000000;
+             color: white;
+             text-align: center;
+             padding: 10px 0;
+             position: fixed;
+             top: 0;
+             left: 0;
+             z-index: 1000;
+             font-family: Arial, sans-serif;
+             font-size: 16px;
+         }
+     </style>
+ </head>
+ 
+ <body>
+     <div id="top-bar"><a href="/index.html" style="color: #ff0004;" target="_blank">More Games</a></div>
+    
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">BaldiWeb</div>
+      </div>
+    </div>
+    <script>
+      function toggleNav() {
+        const nav = document.getElementById("top-bar");
+        nav.style.display = "block";
+        
+        setTimeout(() => {
+          nav.style.display = "none";
+          setTimeout(toggleNav, 60000); // Show again after 1 min
+        }, 20000); // Hide after 20 sec
+      }
+      
+      window.onload = toggleNav;
+    </script>
+  </body>
+</html>

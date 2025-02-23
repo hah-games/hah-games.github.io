@@ -1,0 +1,23 @@
+{
+  "short_name": "Snail Bob 2 html5",
+  "name": "Snail Bob 2 html5",
+  "icons": [
+    {
+      "src": "https://img.gamedistribution.com/cf6d62af468b44ffbcb38b0f9e232f7e-512x512.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://img.gamedistribution.com/cf6d62af468b44ffbcb38b0f9e232f7e-512x512.jpg",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/cf6d62af468b44ffbcb38b0f9e232f7e/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/cf6d62af468b44ffbcb38b0f9e232f7e/",
+  "theme_color": "#3367D6"
+}

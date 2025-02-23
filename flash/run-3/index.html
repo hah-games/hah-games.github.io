@@ -1,0 +1,50 @@
+<html>
+  <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEE2WLPJTY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEE2WLPJTY');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Run 3</title>
+    <link rel="icon" type="image/x-icon" href="run-3.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="run-3.png" />
+  </head>
+  <body>
+    <div id="ruffle" width="100%" height="100%"></div>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("ruffle");
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("Run3.swf");
+    });
+</script>
+<script src="ruffle/ruffle.js"></script>
+<script>// Prevent links from opening in a new window
+  document.addEventListener("DOMContentLoaded", function () {
+      // Override window.open
+      window.open = function () {
+          console.warn("Blocked an attempt to open a new window.");
+          return null;
+      };
+      
+      // Prevent links with target="_blank"
+      document.querySelectorAll("a[target='_blank']").forEach(link => {
+          link.addEventListener("click", function (event) {
+              event.preventDefault();
+              console.warn("Blocked an attempt to open a link in a new tab.");
+          });
+      });
+  });
+  </script>
+  </body>
+</html>
